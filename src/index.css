@@ -59,15 +59,34 @@ form {
 }
 
 .questionnaire {
-}
-
-label {
-  display: inline-block;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  font-size: 1.15rem;
   color: white;
 }
+
+label, legend {
+  font-size: 1.15rem;
+}
+
+.chip-select {
+  border: none;
+  padding: 0;
+}
+
+.chip-select-options {
+  display: flex;
+  gap: 1em;
+}
+
+.chip-select-option {
+  border: none;
+  border-radius: 0.75em;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
 
 textarea {
   width: 100%;
@@ -80,7 +99,6 @@ textarea {
   font-size: .95rem;
   line-height: 1.25;
   letter-spacing: .1rem;
-  color: white;
 }
 
 button[type="submit"] {

@@ -1,9 +1,11 @@
 import { useState } from "react";
+import ChipSelect from "./ChipSelect.jsx"
 
 export default function Questionaire({ onSubmit }) {
 
     const [questionnaire, setQuestionnaire] = useState({
-        favoriteMovie: ""
+        favoriteMovie: "",
+        timeframe: ""
     })
 
     const update = (key, value) => {
@@ -19,10 +21,18 @@ export default function Questionaire({ onSubmit }) {
                     name="favoriteMovie"
                     rows={4}
                     value={questionnaire.favoriteMovie}
-                    onChange={(e) => update("favoriteMovie", e.target.value)}
+                    onChange={(event) => update("favoriteMovie", event.target.value)}
                 >
                 </textarea>
             </div>
+
+            <ChipSelect
+                name="timeframe"
+                label="Are you in the mood for something new or a classic?"
+                options={["New", "Classic"]}
+                value={questionnaire.timeframe}
+                onChange={(value) => update("timeframe", value)}
+            />
 
             <button type="submit">Let's Go</button>
         </form>
