@@ -10,15 +10,25 @@ html, body {
 }
 
 body {
+  font-family: "Roboto Slab", serif;
   display: flex;
   justify-content: center;
 }
 
-.landing {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.app {
+  padding: 2.5em;
+}
+
+button {
+  padding: 1em;
+  display: block;
+  width: 100%;
+  background: #51E08A;
+  border: none;
+  border-radius: 0.25em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
 }
 
 header {
@@ -34,4 +44,45 @@ header {
   font-family: "Carter One", system-ui;
   color: white;
   margin-top: 0.25em;
+}
+
+.landing {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+}
+
+.questionnaire {
+}
+
+label {
+  display: inline-block;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.15rem;
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  background: #3B4877;
+  border: none;
+  border-radius: 0.25em;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: .95rem;
+  line-height: 1.25;
+  letter-spacing: .1rem;
+  color: white;
+}
+
+button[type="submit"] {
+  margin-top: 4em;
 }
