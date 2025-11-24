@@ -20,7 +20,6 @@ export default function ChipSelect({ label, name, options, value, onChange }) {
                     </label>
                 ))}
             </div>
-
         </fieldset>
     )
 }

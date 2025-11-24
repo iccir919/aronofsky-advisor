@@ -3,32 +3,19 @@ html, body {
   padding: 0;
 }
 
-.app {
-  width: 400px;
-  height: 100vh;
-  background: #000C36;
-}
 
 body {
+  color: white;
   font-family: "Roboto Slab", serif;
   display: flex;
   justify-content: center;
 }
 
 .app {
-  padding: 2.5em;
-}
-
-button {
-  padding: 1em;
-  display: block;
-  width: 100%;
-  background: #51E08A;
-  border: none;
-  border-radius: 0.25em;
-  font-size: 1.5rem;
-  font-weight: 700;
-  font-family: "Roboto Slab", serif;
+  width: 400px;
+  height: 100vh;
+  padding: 1.5em;
+  background: #000C36;
 }
 
 header {
@@ -36,14 +23,19 @@ header {
 }
 
 .app-logo {
-  width: 100px;
-  height: 105px;
+  width: 90px;
+  height: 95px;
 }
 
 .app-title {
-  font-family: "Carter One", system-ui;
-  color: white;
-  margin-top: 0.25em;
+  margin-top: .5em;
+  margin-bottom: .1em;
+}
+
+.sub-title {
+  margin-top: 0;
+  margin-bottom: 2em;
+  font-size: 0.85rem;
 }
 
 .landing {
@@ -59,7 +51,9 @@ form {
 }
 
 .questionnaire {
-  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 label, legend {
@@ -87,7 +81,6 @@ input[type="radio"] {
   display: none;
 }
 
-
 textarea {
   width: 100%;
   resize: none;
@@ -102,5 +95,21 @@ textarea {
 }
 
 button[type="submit"] {
-  margin-top: 4em;
+  margin-top: 1em;
 }
+
+button {
+  padding: 0.75em 1em;
+  display: block;
+  width: 100%;
+  background: #51E08A;
+  border: none;
+  border-radius: 0.25em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+}
+
+
+
+

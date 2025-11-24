@@ -8,7 +8,8 @@ export default function Header() {
           alt="Cartoon popcorn with face" 
           className="app-logo"
         />
-        <h1 className="app-title">PopChoice</h1>
+        <h1 className="app-title">Aronofsky Advisor</h1>
+        <p className="sub-title">Discover which Darren Aronofsky movie you should watch</p>
       </header>
     )
 }
