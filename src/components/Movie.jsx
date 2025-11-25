@@ -3,11 +3,22 @@ import { useEffect, useState } from "react";
 export default function Movie({ movie }) {
     const [ poster, setPoster ] = useState(null);
 
-    const { title, year } = parseMovieContent(movie.content);
+    const { title, year, description } = parseMovieContent(movie.content);
+    const TMDB_API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+    console.log(TMDB_API_KEY);
+
+    useEffect(() => {
+        async function getPoster() {
+            const posterUrl = await fetchMoviePoster(title, year, TMDB_API_KEY);
+        }
+
+        getPoster();
+    }, [movie]);
 
     return (
         <div className="movie">
-            <h1>{title}</h1>
+            <h1>{title} ({year})</h1>
+            <p>{description}</p>
         </div>
     );
 }
@@ -27,4 +38,14 @@ function parseMovieContent(content) {
         year: yearMatch ? yearMatch[1] : "",
         description
     }
+}
+
+async function fetchMoviePoster(title, year, apiKey) {
+    const url = `https://api.themoviedb.org/3/search/movie?query=${
+    encodeURIComponent(title)}&year=${year}&api_key=${apiKey}`;
+
+    const response = await fetch(url);
+    const data = await response.json();
+
+    console.log(data)
 }

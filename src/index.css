@@ -102,6 +102,15 @@ button[type="submit"] {
   margin-top: 1em;
 }
 
+.recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 button {
   padding: 0.75em 1em;
   display: block;
