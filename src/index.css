@@ -5,8 +5,6 @@ html, body {
 
 
 body {
-  color: white;
-  font-family: "Roboto Slab", serif;
   display: flex;
   justify-content: center;
 }
@@ -23,8 +21,8 @@ header {
 }
 
 .app-logo {
-  width: 90px;
-  height: 95px;
+  width: 60px;
+  height: 65px;
 }
 
 .app-title {
@@ -60,6 +58,10 @@ label, legend {
   font-size: 1.15rem;
 }
 
+.chip-select-options, textarea {
+  margin-top: 0.5em;
+}
+
 .chip-select {
   border: none;
   padding: 0;
@@ -82,11 +84,13 @@ input[type="radio"] {
 }
 
 textarea {
-  width: 100%;
+  display: inline-block;
+  width: 90%;
   resize: none;
   background: #3B4877;
   border: none;
   border-radius: 0.25em;
+  padding: 0.75em;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   font-size: .95rem;
@@ -108,8 +112,20 @@ button {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: "Roboto Slab", serif;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  transition: color 0.3s ease;
 }
 
+button:hover {
+    background: #37e075;
+    color: white;
+}
+
+body, textarea {
+    font-family: "Roboto Slab", serif;
+    color: white;
+}
 
 
 

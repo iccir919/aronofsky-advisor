@@ -1,7 +1,7 @@
 import movies from "../data/movies.js";
 import { openai } from "../lib/openai.js";
 import { supabase } from "../lib/supabase.js";
-import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters'
+import { CharacterTextSplitter } from "@langchain/textsplitters";
 
 
 /*
@@ -9,9 +9,10 @@ import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters'
     Return LangChain's "output" - the array of Document objects
 */
 async function splitText(text) {
-    const splitter = new RecursiveCharacterTextSplitter({
-        chunkSize: 250,
-        chunkOverlap: 35
+    const splitter = new CharacterTextSplitter({
+    separator: "\n",
+    chunkSize: 350,
+    chunkOverlap: 35,
     })
 
     const output = await splitter.createDocuments([text])

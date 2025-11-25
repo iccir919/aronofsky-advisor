@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ChipSelect from "./ChipSelect.jsx"
 
-export default function Questionaire({ onSubmit }) {
+export default function Questionnaire({ onSubmit }) {
 
     const [questionnaire, setQuestionnaire] = useState({
         favoriteMovie: "",
@@ -10,12 +10,17 @@ export default function Questionaire({ onSubmit }) {
         actor: ""
     })
 
-    const update = (key, value) => {
+    function handleSubmit(event) {
+        event.preventDefault();
+        onSubmit(questionnaire);
+    }
+
+    function update (key, value) {
         setQuestionnaire(prev => ({ ...prev, [key]: value}));
     }
 
     return (
-        <form className="questionnaire" action={onSubmit}>
+        <form className="questionnaire" onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="favoriteMovie">What’s your favorite movie and why?</label>
                 <textarea
@@ -53,7 +58,7 @@ export default function Questionaire({ onSubmit }) {
                     name="actor"
                     rows={2}
                     value={questionnaire.actor}
-                    onChange={(value) => update("actor", value)}
+                    onChange={(event) => update("actor", event.target.value)}
                 >
                 </textarea>
             </div>
