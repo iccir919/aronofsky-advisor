@@ -64,7 +64,7 @@ export default function Questionnaire({ handleQuestionnaire }) {
             <ChipSelect
                 name="mood"
                 label="What are you in the mood for?"
-                options={["Fun", "Serious", "Inspiring", "Scary"]}
+                options={["Reflective", "Overwhelmed", "Anxious", "Inspired"]}
                 value={questionnaire.mood}
                 onChange={(value) => update("mood", value)}
             />
