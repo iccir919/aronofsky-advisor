@@ -1,10 +1,10 @@
 # Aronofsky Advisor 🎬
 
-An AI-powered film recommendation application inspired by the distinctive cinematic style of acclaimed filmmaker Darren Aronofsky.
+An AI-powered film recommendation application that helps you discover which Darren Aronofsky film to watch next.
 
 ## 🌟 About
 
-Aronofsky Advisor is an intelligent web application that leverages AI to provide personalized film recommendations based on the unique aesthetic and thematic elements found in Darren Aronofsky's filmography. Named after the visionary director behind films like *Requiem for a Dream*, *Black Swan*, *The Wrestler*, and *The Whale*, this tool helps cinephiles discover movies that match Aronofsky's signature style of psychological intensity, surreal visuals, and deeply emotional storytelling.
+Aronofsky Advisor is an intelligent web application that uses AI to recommend the perfect Darren Aronofsky film based on your preferences and mood. Named after the visionary director behind films like *Requiem for a Dream*, *Black Swan*, *The Wrestler*, and *The Whale*, this tool helps you navigate his acclaimed filmography to find the right movie for you.
 
 ## 🚀 Live Demo
 
@@ -21,7 +21,7 @@ Check out the live application: [aronofsky-advisor.vercel.app](https://aronofsky
 
 ## 🔌 APIs Used
 
-- **[OpenAI Chat API](https://platform.openai.com/docs/api-reference/chat)** - Powers intelligent film recommendations using ChatGPT to analyze cinematic styles, themes, and user preferences
+- **[OpenAI Chat API](https://platform.openai.com/docs/api-reference/chat)** - Powers intelligent recommendations to match users with the perfect Aronofsky film from his filmography
 
 ## 📁 Project Structure
 
@@ -40,8 +40,8 @@ aronofsky-advisor/
 
 ## 🎯 Features
 
-- **AI-Powered Recommendations** - Uses ChatGPT to provide intelligent film suggestions based on Aronofsky's distinctive style
-- **Psychological Cinema Focus** - Specializes in films with psychological depth, surreal elements, and emotional intensity
+- **AI-Powered Recommendations** - Uses ChatGPT to match you with the right Aronofsky film based on your preferences
+- **Curated Filmography** - Covers Darren Aronofsky's complete body of work
 - **Interactive User Interface** - Built with React for a smooth, responsive user experience
 - **Fast Development** - Powered by Vite for lightning-fast hot module replacement
 - **Modern Architecture** - Leverages serverless functions for scalable API integration
@@ -114,7 +114,7 @@ vercel
 
 ## 🎭 About Darren Aronofsky
 
-Darren Aronofsky is recognized for creating films with surreal, dramatic, and often disturbing elements, frequently presented through psychological realism. His acclaimed filmography includes:
+Darren Aronofsky is an acclaimed American filmmaker known for his surreal, psychologically intense films. His complete filmography includes:
 
 - **Pi** (1998) - Surrealist psychological thriller
 - **Requiem for a Dream** (2000) - Psychological drama about addiction
@@ -125,7 +125,7 @@ Darren Aronofsky is recognized for creating films with surreal, dramatic, and of
 - **Mother!** (2017) - Psychological horror
 - **The Whale** (2022) - Emotional drama
 
-Aronofsky is known for his environmental activism, with several films serving as environmental parables.
+This application helps you discover which of these powerful films is the right choice for you.
 
 ## 🤝 Contributing
 
@@ -158,7 +158,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🎬 Inspiration
 
-This project was inspired by Darren Aronofsky's unique approach to filmmaking—his ability to blend psychological depth with visual poetry, creating films that challenge and move audiences. The advisor aims to help film lovers discover movies that capture similar themes of obsession, transformation, and the human condition.
+This project was inspired by the challenge of choosing which Darren Aronofsky film to watch—each one is powerful and unique, making the decision difficult. The advisor uses AI to understand your preferences and guide you to the perfect Aronofsky film for your current mood and interests.
 
 ## ⭐ Show Your Support
 
